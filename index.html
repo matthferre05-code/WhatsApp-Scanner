@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp Scanner - Relatório Privado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1219783583445073');
+    fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #0b141a;
+        color: white;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+      }
+      .whatsapp-gradient {
+        background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      }
+      .whatsapp-glow {
+        box-shadow: 0 0 25px rgba(37, 211, 102, 0.2);
+      }
+      .text-green-glow {
+        text-shadow: 0 0 10px rgba(37, 211, 102, 0.8), 0 0 20px rgba(37, 211, 102, 0.4);
+      }
+      .privacy-mask {
+        backdrop-filter: blur(8px);
+        background: rgba(0, 0, 0, 0.4);
+      }
+      .animate-pulse-slow {
+        animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+      }
+      .shimmer {
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+        background-size: 200% 100%;
+        animation: shimmer 2s infinite;
+      }
+      @keyframes shimmer {
+        0% { background-position: -200% 0; }
+        100% { background-position: 200% 0; }
+      }
+    </style>
+    <!-- Wistia Embed Scripts -->
+    <script src="https://fast.wistia.com/embed/medias/zisfw1sade.jsonp" async></script>
+    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+  </head>
+  <body>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1219783583445073&ev=PageView&noscript=1"
+    /></noscript>
+    <div id="root"></div>
+  </body>
+</html>
